@@ -7,4 +7,3 @@ from .models import BookData
 def booklist(request):
     book_object = BookData.objects.all()
     return render(request, 'books/book_list.html', {'book_object': book_object})
-
